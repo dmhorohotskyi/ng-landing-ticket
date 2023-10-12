@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+label {
+  color: #605DC8;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.listing {
+  flex: 1 0 auto;
+  background: var(--accent-color);
+  margin: 10px;
+  border-radius: 30px;
+  padding: 5px;
+}
+.listing-heading {
+  color: var(--primary-color);
+  padding: 10px 20px 0 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.listing-photo {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
+}
+.listing-location {
+  padding: 10px 20px 20px 20px;
+}
+
+section.listing a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+section.listing a::after {
+  content: "\203A";
+  margin-left: 5px;
+}

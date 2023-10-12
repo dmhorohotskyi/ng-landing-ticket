@@ -1,0 +1,18 @@
+<div class="listing" *ngFor="let item of tickets$ | async">
+  <div class="listing-heading">
+    <div class="">{{item.id}}</div>
+  </div>
+  <div>
+    <label >Performance name:</label>
+    <span class=""> {{item.event.title}}</span>
+  </div>
+  <div>
+    <label>Ticket type:</label>
+    <span class="ticket-type">{{item.ticketType.title}}</span>
+  </div>
+  <div>
+    <label>Performance Date:</label>
+    <span class="ticket-date">{{item.performance.startDate}}</span>
+  </div>
+</div>
+
